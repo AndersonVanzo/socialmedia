@@ -1,8 +1,10 @@
 import React, { memo } from "react";
 import {
+  StyleProp,
   StyleSheet,
   TouchableHighlight,
   View,
+  ViewStyle,
 } from "react-native";
 import { colors } from "../../common/colors";
 import Send from '../../assets/icons/send.svg';
@@ -12,12 +14,13 @@ interface ButtonProps {
   icon: 'send' | 'add';
   action: () => void;
   label?: string;
+  style?: StyleProp<ViewStyle>;
 }
 
-const Button = ({ icon, action, label }: ButtonProps): JSX.Element => {
+const Button = ({ icon, action, label, style }: ButtonProps): JSX.Element => {
   return (
     <TouchableHighlight
-      style={styles.container}
+      style={[styles.container, style]}
       onPress={() => action()}
       activeOpacity={0.75}
       accessibilityLabel={label}>

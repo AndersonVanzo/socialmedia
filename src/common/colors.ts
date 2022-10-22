@@ -1,7 +1,9 @@
 export const colors = {
   black: '#000000',
+
   gray: '#4E4E4E',
   gray_light: '#C4C4C4' ,
+
   white: '#FFFFFF',
 
   font: '#000000',
@@ -13,4 +15,7 @@ export const colors = {
   secondary: '#F5C8C6',
 
   cream: '#EEF2E2',
+
+  icon: '#000000',
+  iconSelected: '#7DB9B3',
 }
