@@ -8,7 +8,7 @@ import ProfileView from "./src/pages/profile/view";
 import MessagesView from "./src/pages/messages/view";
 
 const App = (): JSX.Element => {
-  const Stack = createNativeStackNavigator();
+  const Stack = createNativeStackNavigator<RootStackParamList>();
 
   return (
     <NavigationContainer>
