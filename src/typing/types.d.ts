@@ -4,7 +4,7 @@ declare global {
   type RootStackParamList = {
     Welcome: undefined;
     Post: undefined;
-    PostTab: undefined;
+    PostTab2: undefined;
     TabScreens: undefined;
   }
 

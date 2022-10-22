@@ -74,7 +74,7 @@ const App = (): JSX.Element => {
   const NewPostScreen = (): JSX.Element => {
     return (
       <Stack.Navigator screenOptions={{ headerShown: false }}>
-        <Stack.Screen name={'PostTab'} component={PostView} />
+        <Stack.Screen name={'PostTab2'} component={PostView} />
       </Stack.Navigator>
     );
   }
