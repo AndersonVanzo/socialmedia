@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import {
   FlatList,
   View,
@@ -8,6 +8,8 @@ import { styles } from "./styles";
 import BodyBold from "../../components/texts/BodyBold";
 import Effects from "./components/Effects";
 import Header from "./components/Header";
+import Post from "./components/Post";
+import Notification from "../../assets/icons/notification.svg";
 
 const HomeView = (): JSX.Element => {
   return (
@@ -16,11 +18,14 @@ const HomeView = (): JSX.Element => {
       <View style={styles.content}>
         <View style={styles.header}>
           <BodyBold>Socially</BodyBold>
+          <Notification />
         </View>
         <FlatList
-          data={[]}
-          renderItem={() => <Fragment />}
+          data={[1, 2, 3]}
+          renderItem={() => <Post />}
           ListHeaderComponent={<Header />}
+          ItemSeparatorComponent={() => <View style={styles.separator} />}
+          contentContainerStyle={styles.listContent}
         />
       </View>
     </SafeAreaView>

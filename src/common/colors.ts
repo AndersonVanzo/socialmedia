@@ -5,6 +5,7 @@ export const colors = {
   gray_light: '#C4C4C4' ,
 
   white: '#FFFFFF',
+  white_dark: '#D8D8D8',
 
   font: '#000000',
   font_light: '#656565',

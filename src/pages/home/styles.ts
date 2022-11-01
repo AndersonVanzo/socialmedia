@@ -8,15 +8,20 @@ export const styles = StyleSheet.create({
   },
   content: {
     flex: 1,
-    // paddingHorizontal: 24,
     zIndex: 1,
   },
   header: {
     alignItems: 'center',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    paddingHorizontal: 24,
-    paddingTop: 54,
+    padding: 24,
+    paddingTop: 48,
     width: '100%',
   },
+  listContent: {
+    paddingBottom: 94,
+  },
+  separator: {
+    height: 32,
+  }
 });

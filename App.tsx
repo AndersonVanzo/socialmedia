@@ -31,7 +31,7 @@ const App = (): JSX.Element => {
         borderTopLeftRadius: 20,
         borderTopRightRadius: 20,
         borderTopWidth: 0,
-        height: 64,
+        height: 56,
         elevation: 10,
         position: 'absolute',
         bottom: 0,

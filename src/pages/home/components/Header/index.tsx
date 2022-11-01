@@ -26,7 +26,7 @@ export default memo(Header);
 
 const styles = StyleSheet.create({
   container: {
-    marginTop: 48,
+    marginTop: 24,
     paddingHorizontal: 24,
   },
   list: {
