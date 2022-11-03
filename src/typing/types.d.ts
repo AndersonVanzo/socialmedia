@@ -1,3 +1,5 @@
+import { NativeStackNavigatorProps } from "@react-navigation/native-stack/lib/typescript/src/types";
+
 export { }
 
 declare global {
@@ -15,4 +17,6 @@ declare global {
     Favorites: undefined;
     Profile: undefined;
   }
+
+  type NavigationProps = NativeStackNavigatorProps<RootStackParamList>;
 }
