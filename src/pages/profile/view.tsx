@@ -5,9 +5,9 @@ import {
 import { SafeAreaView } from "react-native-safe-area-context";
 import { styles } from "./styles";
 import UserData from "./components/UserData";
+import Content from "./components/Content";
 import Effects from "./components/Effects";
 import Header from "./components/Header";
-import Content from "./components/Content";
 
 const ProfileView = () => {
 

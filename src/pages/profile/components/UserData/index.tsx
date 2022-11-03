@@ -1,7 +1,10 @@
 import React, { memo } from "react";
-import { StyleSheet, View } from "react-native";
-import Body from "../../../../components/texts/Body";
+import {
+  StyleSheet,
+  View,
+} from "react-native";
 import H2Bold from "../../../../components/texts/H2Bold";
+import Body from "../../../../components/texts/Body";
 
 interface UserDataProps {
   posts: number;
@@ -32,15 +35,15 @@ export default memo(UserData);
 
 const styles = StyleSheet.create({
   container: {
-    width: '100%',
+    alignItems: 'center',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'center',
     marginTop: 64,
+    width: '100%',
   },
   item: {
     alignItems: 'center',
-    justifyContent: 'center',
     flex: .33,
+    justifyContent: 'center',
   },
 });

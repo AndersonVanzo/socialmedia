@@ -2,13 +2,11 @@ import React, { memo, useState } from "react";
 import {
   FlatList,
   StyleSheet,
-  Text,
   TouchableOpacity,
   View,
 } from "react-native";
 import Posts from '../../../../assets/icons/posts.svg';
 import Save from '../../../../assets/icons/save_black.svg';
-import { colors } from "../../../../common/colors";
 import Body from "../../../../components/texts/Body";
 
 interface ContentProps {
@@ -46,30 +44,30 @@ const Content = ({ }: ContentProps): JSX.Element => {
   );
 }
 
-export default (Content);
+export default memo(Content);
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
   header: {
-    width: '100%',
     flexDirection: 'row',
     marginVertical: 20,
+    width: '100%',
   },
   headerButton: {
-    flex: .5,
-    justifyContent: 'center',
     alignItems: 'center',
+    flex: .5,
     height: 48,
+    justifyContent: 'center',
   },
   content: {
     flex: 1,
     paddingBottom: 80,
   },
   emptyContent: {
-    justifyContent: 'center',
     alignItems: 'center',
     height: '100%',
+    justifyContent: 'center',
   },
 });

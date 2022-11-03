@@ -1,11 +1,15 @@
 import React from "react";
-import { Text, TouchableHighlight, View } from "react-native";
+import {
+  Text,
+  TouchableOpacity,
+  View,
+} from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import Body from "../../components/texts/Body";
-import Title from "../../components/texts/Title";
 import { styles } from "./styles";
 import Welcome from "../../assets/images/welcome.svg"
+import Title from "../../components/texts/Title";
 import Arrow from "../../assets/icons/arrow.svg"
+import Body from "../../components/texts/Body";
 
 const WelcomeView = (): JSX.Element => {
   return (
@@ -22,12 +26,12 @@ const WelcomeView = (): JSX.Element => {
           <Welcome />
         </View>
         <View style={styles.buttonContainer}>
-          <TouchableHighlight style={styles.button} onPress={() => { console.log('click') }}>
+          <TouchableOpacity activeOpacity={0.75} style={styles.button} onPress={() => { console.log('click') }}>
             <View style={styles.buttonContent}>
               <Text style={styles.buttonText}>Start</Text>
               <Arrow />
             </View>
-          </TouchableHighlight>
+          </TouchableOpacity>
         </View>
       </View>
     </SafeAreaView>

@@ -81,7 +81,7 @@ const App = (): JSX.Element => {
 
   return (
     <NavigationContainer>
-      <Stack.Navigator initialRouteName={'TabScreens'} screenOptions={{ headerShown: false }}>
+      <Stack.Navigator initialRouteName={'Welcome'} screenOptions={{ headerShown: false }}>
         <Stack.Screen name={'Welcome'} component={WelcomeView} />
         <Stack.Screen name={'Post'} component={PostView} />
         <Stack.Screen name={'TabScreens'} component={TabScreens} />

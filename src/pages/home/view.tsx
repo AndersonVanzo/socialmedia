@@ -4,12 +4,12 @@ import {
   View,
 } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
+import Notification from "../../assets/icons/notification.svg";
 import { styles } from "./styles";
 import BodyBold from "../../components/texts/BodyBold";
 import Effects from "./components/Effects";
 import Header from "./components/Header";
 import Post from "./components/Post";
-import Notification from "../../assets/icons/notification.svg";
 
 const HomeView = (): JSX.Element => {
   return (

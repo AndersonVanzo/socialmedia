@@ -1,7 +1,11 @@
 import React, { memo } from "react";
-import { FlatList, View, StyleSheet, Dimensions } from "react-native";
-import H2Bold from "../../../../components/texts/H2Bold";
+import {
+  FlatList,
+  View,
+  StyleSheet,
+} from "react-native";
 import AddStory from "./components/AddStory";
+import H2Bold from "../../../../components/texts/H2Bold";
 import Story from "./components/Story";
 
 const Header = (): JSX.Element => {
